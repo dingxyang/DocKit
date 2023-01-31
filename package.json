@@ -1,6 +1,13 @@
 {
   "scripts": {
-    "doc": "docukit"
+    "build": "npm run docukit:build && npm run create-docukit:build ",
+    "docaid:dev": "pnpm --filter docukit dev",
+    "docukit:build": "pnpm --filter docukit build",
+    "docukit:release": "pnpm --filter docukit release",
+    "create-docukit:dev": "pnpm --filter create-docukit dev",
+    "create-docukit:build": "pnpm --filter create-docukit build",
+    "create-docukit:release": "pnpm --filter create-docukit release",
+    "release": "npm run docukit:release  && npm run create-docukit:release"
   },
   "devDependencies": {
     "@types/react": "^18",
@@ -10,6 +17,7 @@
     "esno": "^0.16.3",
     "git-repo-info": "^2.1.1",
     "typescript": "^4.9.5",
-    "zx": "^7.1.1"
+    "zx": "^7.1.1",
+    "create-docukit": "0.0.2"
   }
 }
