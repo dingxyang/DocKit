@@ -1,7 +1,7 @@
 {
   "name": "docukit",
-  "main": "dist/cli.js",
-  "module": "es/client.js",
+  "main": "dist/index.js",
+  "module": "client/client.js",
   "bin": {
     "docukit": "bin/docukit.js"
   },
@@ -12,13 +12,27 @@
     "release": "esno ../scripts/release.ts --pkg docukit"
   },
   "license": "MIT",
+  "dependencies": {
+    "@types/markdown-it": "^12.2.3",
+    "father": "^4.1.3",
+    "feed": "^4.2.2",
+    "front-matter": "^4.0.2",
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.6",
+    "markdown-toc": "^1.2.0",
+    "react-wrap-balancer": "^0.4.0",
+    "shiki": "^0.14.0",
+    "styled-components": "^5.3.6"
+  },
   "devDependencies": {
     "father": "^4.1.3"
   },
   "files": [
     "bin",
     "dist",
-    "es"
+    "client",
+    "client.d.ts",
+    "client.js"
   ],
   "version": "0.0.4"
 }

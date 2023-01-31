@@ -1,8 +1,10 @@
 export default {
   cjs: {
     output: 'dist',
+    ignores: ['src/client/**'],
   },
   esm: {
-    output: 'es',
+    input: 'src/client',
+    output: 'client',
   },
 };
