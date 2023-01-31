@@ -1,0 +1,25 @@
+{
+  "name": "dockit",
+  "author": "dingxyang <https://github.com/dingxyang>",
+  "main": "dist/index.js",
+  "module": "es/client.js",
+  "bin": {
+    "dockit": "bin/dockit.js"
+  },
+  "scripts": {
+    "build": "father build",
+    "dev": "father dev",
+    "doctor": "father doctor",
+    "release": "esno ../scripts/release.ts --pkg dockit"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "father": "^4.1.3"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "es"
+  ],
+  "version": "0.0.2"
+}

@@ -1,0 +1,3 @@
+packages:
+  - 'dockit'
+  - 'create-dockit'
