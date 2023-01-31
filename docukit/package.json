@@ -1,0 +1,24 @@
+{
+  "name": "docukit",
+  "main": "dist/cli.js",
+  "module": "es/client.js",
+  "bin": {
+    "docukit": "bin/docukit.js"
+  },
+  "scripts": {
+    "build": "father build",
+    "dev": "father dev",
+    "doctor": "father doctor",
+    "release": "esno ../scripts/release.ts --pkg docukit"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "father": "^4.1.3"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "es"
+  ],
+  "version": "0.0.3"
+}
